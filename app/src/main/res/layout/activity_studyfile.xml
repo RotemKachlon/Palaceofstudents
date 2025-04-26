@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StudyfileActivity">
+
+    <TextView
+
+        android:id="@+id/tvFileSubTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="42dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnFileUnderstand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnFileUnderstand"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFileSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="25dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tvProffession"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvProffession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="18dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tvFileUnderstand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnFileUnderstand"
+        app:layout_constraintTop_toBottomOf="@+id/tvFileSubject" />
+
+    <TextView
+        android:id="@+id/tvFileUnderstand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="25dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tvFileDoNotUnderstand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProffession" />
+
+    <TextView
+        android:id="@+id/tvFileDoNotUnderstand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="45dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/tvAVG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnFileDoNotUnderstand"
+        app:layout_constraintTop_toBottomOf="@+id/tvFileUnderstand" />
+
+    <Button
+        android:id="@+id/btnShowFile"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:text="הצג קובץ"
+        app:layout_constraintBottom_toTopOf="@+id/lvFileComment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAVG" />
+
+    <TextView
+        android:id="@+id/tvAVG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="7dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnShowFile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spRate"
+        app:layout_constraintTop_toBottomOf="@+id/tvFileDoNotUnderstand" />
+
+    <Button
+        android:id="@+id/btnFileUnderstand"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="23dp"
+        android:text="הבנתי"
+        app:layout_constraintBottom_toTopOf="@+id/btnFileDoNotUnderstand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFileSubTheme" />
+
+    <Button
+        android:id="@+id/btnFileDoNotUnderstand"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="35dp"
+        android:text="לא הבנתי"
+        app:layout_constraintBottom_toTopOf="@+id/spRate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFileUnderstand" />
+
+    <Spinner
+        android:id="@+id/spRate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="37dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/lvFileComment"
+        app:layout_constraintEnd_toStartOf="@+id/tvAVG"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFileDoNotUnderstand" />
+
+    <ListView
+        android:id="@+id/lvFileComment"
+        android:layout_width="336dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnFileAddComment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spRate"
+        app:layout_constraintTop_toBottomOf="@+id/spRate" />
+
+    <Button
+        android:id="@+id/btnFileAddComment"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="27dp"
+        android:text="הוסף תגובה"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etFileAddComment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvFileComment" />
+
+    <EditText
+        android:id="@+id/etFileAddComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:ems="10"
+        android:hint="הוסף תגובה"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFileAddComment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFileAddComment" />
+</androidx.constraintlayout.widget.ConstraintLayout>

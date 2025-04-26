@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TeacherCreateClasses">
+    <Button
+        android:id="@+id/btnJoinClass"
+        android:layout_width="205dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="48dp"
+        android:text="הוספת כיתה"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLayerTeacherCreateClass" />
+
+    <TextView
+        android:id="@+id/tvMyClasses"
+        android:layout_width="239dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="109dp"
+        android:text="יצירת כיתות"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/etClassNameTeacherCreateClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etClassNameTeacherCreateClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:hint="class name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etLayerTeacherCreateClass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMyClasses" />
+
+    <EditText
+        android:id="@+id/etLayerTeacherCreateClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="178dp"
+        android:ems="10"
+        android:hint="layer"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnJoinClass"
+        app:layout_constraintEnd_toEndOf="@+id/etClassNameTeacherCreateClass"
+        app:layout_constraintTop_toBottomOf="@+id/etClassNameTeacherCreateClass" />
+</androidx.constraintlayout.widget.ConstraintLayout>

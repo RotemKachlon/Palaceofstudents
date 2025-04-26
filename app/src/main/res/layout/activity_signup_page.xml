@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SignupPage">
+
+    <TextView
+        android:id="@+id/TXTsignuptitle"
+        android:layout_width="245dp"
+        android:layout_height="80dp"
+        android:letterSpacing="0.05"
+        android:shadowColor="#000000"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="10"
+        android:text="Sign up"
+        android:textColor="#9A2CB3"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/suez_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <TextView
+        android:id="@+id/TXTsignupemail"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="227dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="42dp"
+        android:text="Email :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro"
+        app:layout_constraintBottom_toTopOf="@+id/TXTsignupusername"
+        app:layout_constraintEnd_toStartOf="@+id/EDTsignupemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EDTsignupemail"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Reggie@gmail.com"
+        android:inputType="textPersonName"
+        android:textColor="#FB6F6F"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro"
+        app:layout_constraintBottom_toTopOf="@+id/EDTsignupusername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TXTsignupemail"
+        app:layout_constraintTop_toBottomOf="@+id/TXTsignuptitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/TXTsignupusername"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="36dp"
+        android:text="Username :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro"
+        app:layout_constraintBottom_toTopOf="@+id/TXTsignuppassword"
+        app:layout_constraintEnd_toStartOf="@+id/EDTsignupusername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTsignupemail" />
+
+    <EditText
+        android:id="@+id/EDTsignupusername"
+        android:layout_width="240dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:hint="Reggie"
+        android:inputType="textPersonName"
+        android:textColor="#FB6F6F"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro"
+        app:layout_constraintBottom_toTopOf="@+id/TXTsignuppassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTsignupemail" />
+
+    <TextView
+        android:id="@+id/TXTsignuppassword"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="6dp"
+        android:text="Password :"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro"
+        app:layout_constraintEnd_toStartOf="@+id/EDTsignuppassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTsignupusername" />
+
+    <EditText
+        android:id="@+id/EDTsignuppassword"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="password here"
+        android:inputType="textPassword"
+        android:textColor="#FB6F6F"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro"
+        app:layout_constraintBottom_toTopOf="@+id/EDTsignupphone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TXTsignuppassword"
+        app:layout_constraintTop_toBottomOf="@+id/EDTsignupusername" />
+
+    <EditText
+        android:id="@+id/EDTsignupphone"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="phone number"
+        android:singleLine="true"
+        android:textColor="#FB6F6F"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro"
+        app:layout_constraintBottom_toTopOf="@+id/RADGRProlepick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EDTsignuppassword" />
+
+    <RadioGroup
+        android:id="@+id/RADGRProlepick"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="27dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/BTNsignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EDTsignupphone">
+
+        <RadioButton
+            android:id="@+id/RADteacher"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="Teacher" />
+
+        <RadioButton
+            android:id="@+id/RADstudent"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Student" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/IMGsignupreggielike"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/EDTsignuppassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EDTsignupemail"
+        app:srcCompat="@drawable/reggie_like" />
+
+    <Button
+        android:id="@+id/BTNsignup"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="81dp"
+        android:fontFamily="@font/source_sans_pro_bold"
+        android:letterSpacing="0.000001"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:backgroundTint="#9A2CB3"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RADGRProlepick"
+        app:strokeColor="#000000"
+        app:strokeWidth="3dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

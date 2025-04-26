@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601464069471",
+    "project_id": "newpalace-aae01",
+    "storage_bucket": "newpalace-aae01.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601464069471:android:78a5a20f51799696192aea",
+        "android_client_info": {
+          "package_name": "com.example.anew"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxlsYNkPE5S3Efh5xMA5VNd5oDuGi-7g0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

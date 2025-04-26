@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AboutPage">
+
+    <ImageView
+        android:id="@+id/IMGaboutlogo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/TXTabout1"
+        app:layout_constraintEnd_toStartOf="@+id/TXTabouttitle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/TXTabouttitle1"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="21dp"
+        android:text="Hi, Reggie here."
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold"
+        app:layout_constraintBottom_toTopOf="@+id/TXTabouttitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IMGaboutlogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TXTabouttitle2"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="434dp"
+        android:text="Anyways, I'm your guide. Now read below. I worked hard on that"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold"
+        app:layout_constraintBottom_toTopOf="@+id/IMGaboutreggieok"
+        app:layout_constraintEnd_toEndOf="@+id/TXTabouttitle1"
+        app:layout_constraintStart_toStartOf="@+id/TXTabouttitle1"
+        app:layout_constraintTop_toBottomOf="@+id/TXTabouttitle1"
+        app:lineHeight="25dp" />
+
+    <TextView
+        android:id="@+id/TXTabout1"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:text="Principle? Teacher? Student? Finding it difficult to keep all bussiness on track? "
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold"
+        app:layout_constraintBottom_toTopOf="@+id/TXTabout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IMGaboutlogo" />
+
+    <TextView
+        android:id="@+id/TXTabout2"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:text="Well I see you're still some kind of a genious, Because you found THE tool to help you with it!"
+        android:textColor="#E91E63"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold"
+        app:layout_constraintBottom_toTopOf="@+id/TXTabout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTabout1" />
+
+    <TextView
+        android:id="@+id/TXTabout3"
+        android:layout_width="370dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="24dp"
+        android:text="Palace of Students and I will take care of the donkey work for you, Leaving you to your things, As easiest as I can make it."
+        android:textColor="#03A9F4"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold"
+        app:layout_constraintBottom_toTopOf="@+id/TXTabout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTabout2" />
+
+    <TextView
+        android:id="@+id/TXTabout4"
+        android:layout_width="255dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="87dp"
+        android:text="Anyways - Break a Leg"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/source_sans_pro_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTabout3" />
+
+    <ImageView
+        android:id="@+id/IMGaboutreggieok"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTabouttitle2"
+        app:srcCompat="@drawable/reggie_ok" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

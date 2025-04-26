@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CreateSchool">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="202dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="89dp"
+            android:layout_marginBottom="73dp"
+            android:text="יצירת בית ספר"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/schoolName"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="34dp"
+            android:ems="10"
+            android:hint="שם בית ספר"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/etSchoolCode"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="34dp"
+            android:ems="10"
+            android:hint="קוד בית ספר"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/cityschool"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="34dp"
+            android:ems="10"
+            android:hint="עיר בית ספר"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/schoolAdress"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="34dp"
+            android:ems="10"
+            android:hint="כתובת בית ספר"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnCreateSchool"
+            android:layout_width="154dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="34dp"
+            android:text="אישור" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
